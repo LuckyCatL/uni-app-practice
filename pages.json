@@ -1,0 +1,109 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+			"navigationBarTitleText": "首页",
+			"navigationBarBackgroundColor": "#FFFFFF",
+			"enablePullDownRefresh":true
+			}
+		},
+		{
+			"path":"pages/find/find",
+			"style": {
+			"navigationBarTitleText": "发现",
+			"navigationBarBackgroundColor": "#FFFFFF",
+			"navigationStyle":"custom",
+			"enablePullDownRefresh":true,
+			"app-plus":{
+					"bounce":"none",
+					"pullToRefresh":{
+						// "support":"true",
+						"offset":"100px"
+						// "style": "default"
+					}
+				}
+			}
+		},
+		{
+			"path":"pages/nav/nav",
+			"style": {
+			"navigationBarTitleText": "工具",
+			"navigationBarBackgroundColor": "#FFFFFF",
+			"enablePullDownRefresh":true
+			}
+		},
+		{
+			"path":"pages/person/person",
+			"style": {
+			"navigationBarTitleText": "我的",
+			"navigationBarBackgroundColor": "#FFFFFF",
+			"navigationStyle":"custom",
+			"enablePullDownRefresh":true,
+			"app-plus":{
+					"bounce":"none",
+					"pullToRefresh":{
+						// "support":"true",
+						"offset":"100px"
+						// "style": "default"
+					}
+				}
+			}
+		},
+		{
+			"path":"pages/find/shangchuan",
+			"style": {
+			"navigationBarTitleText": "讨论",
+			"navigationBarBackgroundColor": "#FFFFFF",
+			"app-plus": {
+			        "animationType": "slide-in-bottom",
+			        "animationDuration": 300
+			    }
+			}
+		}
+	],
+	
+	"tabBar": {
+	        "color": "#cdcdcd",
+	        "selectedColor": "#39cffc",
+	        "borderStyle": "black",
+	        "backgroundColor": "#ffffff",
+	        "list": [
+				{
+	                "pagePath": "pages/index/index",
+	                "iconPath": "./static/icon/home.png",
+	                "selectedIconPath": "./static/icon/home1.png",
+	                "text": "首页"
+	            }, 
+				{
+	                "pagePath": "pages/find/find",
+	                "iconPath": "./static/icon/bubble.png",
+	                "selectedIconPath": "./static/icon/bubble1.png",
+	                "text": "发现"
+	            },
+	            {
+	                "pagePath": "pages/nav/nav",
+	                "iconPath": "./static/icon/gongju.png",
+	                "selectedIconPath": "./static/icon/gongju1.png",
+	                "text": "工具"
+				}, 
+				{
+					"pagePath": "pages/person/person",
+	                "iconPath": "./static/icon/me.png",
+	                "selectedIconPath": "./static/icon/me1.png",
+	                "text": "我的"
+				}
+		]
+	},
+	
+	
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"background": "#efeff4"
+		}
+	}
+}
